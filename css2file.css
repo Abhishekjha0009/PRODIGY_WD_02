@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stopwatch-container {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+#time-display {
+  font-size: 42px;
+  color: #333333;
+  background-color: #f0f0f0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  flex: 1 1 45%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #888;
+  cursor: pointer;
+}
+
+#start {
+  background-color: #4caf50;
+}
+
+#pause {
+  background-color: #ff9800;
+}
+
+#reset {
+  background-color: #f44336;
+}
+
+#lap {
+  background-color: #3f51b5;
+}
+
+.controls button:hover {
+  opacity: 0.9;
+}
+
+.lap-section {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.lap-section h2 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+#laps-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+#laps-list li {
+  font-size: 14px;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  background-color: #fce4ec;
+  border-radius: 6px;
+  color: #333;
+}
